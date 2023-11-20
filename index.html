@@ -1,0 +1,29 @@
+<html>
+	<head><title></title>
+		<link rel="stylesheet" type="text/css" href="./quiz.css">
+		<script src=
+		"https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" type = "text/javascript">
+		</script>
+	</head>
+	<body>
+		<div id="main_container">
+			<div id="myProgress">
+				<div id="myBar"></div>
+			  </div>
+			<div id="ques" data-ques="15">Welcome to QuizzBuzz</div>
+			<div id="start" onClick="startQuiz()">Start Quiz !</div>
+			<div class="flex-container">
+				<div id="option-1" class="options" onClick="answered(event)">Option 1</div>
+				<div id="option-2" class="options" onClick="answered(event)">Option 2</div>
+				<div id="option-3" class="options" onClick="answered(event)">Option 3</div>
+				<div id="option-4" class="options" onClick="answered(event)">Option 4</div>
+			</div>
+			<div class="flex-container" style="justify-content: space-evenly; align-items:end ;">
+			<div id="next" onClick="changeQuestion()">Next &emsp; ></div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./data.js"></script>
+		<script type="text/javascript" src="./quiz.js"></script>
+	</body>
+</html>
